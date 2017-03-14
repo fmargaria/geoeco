@@ -2,7 +2,7 @@ function initialize(address,limit,paymentMethod,radius) {
         geocoder = new google.maps.Geocoder();
         var lt = ""
         var ln = ""
-         document.getElementById('init').scrollIntoView();
+        document.getElementById('init').scrollIntoView();
         geocoder.geocode({
         'address': address
         }, function(results, status) {      
@@ -57,7 +57,6 @@ function initialize(address,limit,paymentMethod,radius) {
         		    title: 'Hello World!'
         		  });
             }
-            console.log(response2);
             });
         
     }
