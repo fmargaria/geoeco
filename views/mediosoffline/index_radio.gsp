@@ -25,18 +25,19 @@
 	<section class="webdesigntuts-workshop">
 		<div id="init"></div>
 	    <g:formRemote name="myForm" on404="alert('not found')" url="[controller:'Mediosoffline',action:'getAddress']" update="[success:'lat']">
-		    <div class="center"><input name="address" type="text" placeholder="Dirección" />
+		    <div class="line"><input name="address" type="text" placeholder="Dirección" />
 		    <input name="radius" type="text" placeholder="Radio (en metros)"/>
 			<g:select name="paymentMethod" from="${paymentMethods}" optionValue="name"
 				value="${metodo}" optionKey="id"
 				noSelection="['':'-Todos los metodos de pago-']" />		    
-		    <input type="submit" value="Buscar"/></div>
+		    <input type="submit" value="Buscar" onclick="document.getElementById('button').style.display = 'block';"/>
+            <button id="button" style="display:none" onclick="document.getElementById('myTable').scrollIntoView();" > Ver Tabla </button>
+            </div>
 		</g:formRemote>
 	    <div id="lat"></div> 
 	    <div id="lng"></div> 
   		<div id="map" style="padding:80px; height:500px"></div>
-	    <div id="myTable">
-	    </div>
+	    <div id="myTable"></div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </body>
