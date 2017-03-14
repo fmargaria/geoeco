@@ -25,12 +25,14 @@
 	<section class="webdesigntuts-workshop">
 		<div id="init"></div>
 	    <g:formRemote name="myForm" on404="alert('not found')" url="[controller:'Mediosoffline',action:'getAddress']" update="[success:'lat']">
-		    <div class="center"><input name="address" type="text" placeholder="Dirección" />
+		    <div class="line"><input name="address" type="text" placeholder="Dirección" />
 		    <input name="limit" type="text" placeholder="Cantidad de Medios de Pago" />
 			<g:select name="paymentMethod" from="${paymentMethods}" optionValue="name"
 				value="${metodo}" optionKey="id"
 				noSelection="['':'-Todos los metodos de pago-']" />		    
-		    <input type="submit" value="Buscar"/></div>
+		    <input type="submit" value="Buscar" onclick="document.getElementById('button').style.display = 'block';"/>
+		    <button id="button" style="display:none" " display="none" value=""> Ver Tabla </button>
+		    </div>
 		</g:formRemote>
 	    <div id="lat"></div> 
 	    <div id="lng"></div> 
