@@ -12,7 +12,8 @@
 	display:inline;
 }
 .table {
-	margin: 150px 20% 0;
+	margin: 150px 10% 10% 10%;
+	margin-right: 10%;
 	padding: 100px;
 }
 .webdesigntuts-workshop form {
@@ -23,7 +24,7 @@
 	box-shadow: inset 0 0 0 1px #272727;
 	display: inline-block;
 	font-size: 0px;
-	margin: 10% auto 0;
+	margin: 10px 0 0;
 	padding: 20px;
 	position: relative;
 	z-index: 1;
@@ -47,6 +48,9 @@
 	padding: 0 10px;
 	text-shadow: 0 -1px 0 #000;
 	width: 200px;
+	-webkit-autofill {
+    color: #111111 !important;
+}
 }
 
 .center {
