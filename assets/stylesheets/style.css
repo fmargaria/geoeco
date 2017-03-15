@@ -9,12 +9,32 @@
 }
 
 .line {
-	display:inline;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    display:inline;
 }
+select {
+
+    background-color: #111111; /* fallback color if gradients are not supported */
+    border: 1px solid #AAA;
+    border-radius: 20px;
+    color: #FFF;
+    font-size: inherit;
+    margin: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height:50px;
+    width:100px;
+}
+
 .table {
-	margin: 150px 10% 10% 10%;
+	margin: 0 0;
 	margin-right: 10%;
-	padding: 100px;
+	padding: 80px;
+	border-collapse: initial
 }
 .webdesigntuts-workshop form {
 	background: #111;
@@ -24,8 +44,8 @@
 	box-shadow: inset 0 0 0 1px #272727;
 	display: inline-block;
 	font-size: 0px;
-	margin: 10px 0 0;
-	padding: 20px;
+	margin: 0px 0 0;
+	padding: 15px;
 	position: relative;
 	z-index: 1;
 	width:100%;
@@ -57,6 +77,26 @@
 	margin: 0 25%;
 }
 
+.webdesigntuts-workshop select{
+	background: #222;	
+	background: linear-gradient(#333, #222);	
+	border: 1px solid #444;
+	border-radius: 5px 0 0 5px;
+	box-shadow: 0 2px 0 #000;
+	color: #888;
+	display: block;
+	float: left;
+	font-family: 'Cabin', helvetica, arial, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	height: 40px;
+	margin: 0;
+	padding: 0 10px;
+	text-shadow: 0 -1px 0 #000;
+	width: 200px;
+	-webkit-autofill {
+    color: #111111 !important;
+}
 .webdesigntuts-workshop button {
 	background: #222;
 	background: linear-gradient(#333, #222);
