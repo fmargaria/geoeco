@@ -22,10 +22,14 @@
 	<section class="webdesigntuts-workshop">
 		<div id="init"></div>
 	    <g:formRemote name="myForm" on404="alert('not found')" url="[controller:'Mediosoffline',action:'extra2']" update="[success:'lat']">
-		    <div class="center"><input name="latitud" type="text" placeholder="Latitud" />
-		    <input name="longitud" type="text" placeholder="Longitud" />
-		    <input name="radius" type="text" placeholder="Radio (en metros)" />	    
-		    <input type="submit" value="Buscar"/></div>
+		   <div class="line"><input name="address" type="text" placeholder="Dirección" />
+            <input name="radius" type="text" placeholder="Radio (en metros)"/>
+            <g:select name="paymentMethod" from="${paymentMethods}" optionValue="name"
+                value="${metodo}" optionKey="id"
+                noSelection="['':'-Todos los metodos de pago-']" />         
+            <input type="submit" value="Buscar" onclick="document.getElementById('button').style.display = 'block';"/>
+            <input id="button" type="button" style="display:none" onclick="document.getElementById('myTable').scrollIntoView({block: 'end', behavior: 'smooth'});" value="Ver Tabla"></button>
+            </div>
 		</g:formRemote>
 	    <div id="lat"></div> 
 	    <div id="lng"></div> 

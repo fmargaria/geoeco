@@ -31,7 +31,7 @@
 				value="${metodo}" optionKey="id"
 				noSelection="['':'-Todos los metodos de pago-']" />		    
 		    <input type="submit" value="Buscar" onclick="document.getElementById('button').style.display = 'block';"/>
-            <button id="button" style="display:none" onclick="document.getElementById('myTable').scrollIntoView();" > Ver Tabla </button>
+            <input id="button" type="button" style="display:none" onclick="document.getElementById('myTable').scrollIntoView({block: 'end', behavior: 'smooth'});" value="Ver Tabla"></button>
             </div>
 		</g:formRemote>
 	    <div id="lat"></div> 
