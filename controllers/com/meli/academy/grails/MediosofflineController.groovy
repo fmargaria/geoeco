@@ -6,7 +6,7 @@ import groovy.json.JsonSlurper
 class MediosofflineController {
 
     def index() {
-		def url = new URL('https://api.mercadolibre.com/sites/MLA/payment_methods/')
+		def url = new URL('localhost:1080/sites/MLA/payment_methods/')
 		def connection = (HttpURLConnection)url.openConnection()
 		connection.setRequestMethod("GET")
 		connection.setRequestProperty("Accept", "application/json")
@@ -17,7 +17,7 @@ class MediosofflineController {
 		[paymentMethods:array]
 	}
 	def index_radio() {
-		def url = new URL('https://api.mercadolibre.com/sites/MLA/payment_methods/')
+		def url = new URL('localhost:1080/sites/MLA/payment_methods/')
 		def connection = (HttpURLConnection)url.openConnection()
 		connection.setRequestMethod("GET")
 		connection.setRequestProperty("Accept", "application/json")
@@ -40,7 +40,7 @@ class MediosofflineController {
 		
 	}
 	def extra2(){
-		def url = new URL('https://api.mercadolibre.com/sites/MLA/payment_methods/')
+		def url = new URL('localhost:1080/sites/MLA/payment_methods/')
 		def connection = (HttpURLConnection)url.openConnection()
 		connection.setRequestMethod("GET")
 		connection.setRequestProperty("Accept", "application/json")
